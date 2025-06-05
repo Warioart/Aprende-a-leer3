@@ -1,9 +1,9 @@
 ﻿const images = [
   "lapiz.png","libro.png","limon.png","luna.png","manzana.png","media.png",
   "mesa.png","mono.png","niña.png","niño.png","oveja.png","pan.png","papá.png",
-  "pelota.png","pera.png","pez.png","puerco.png","rana.png","raton.png","reloj.png",
-  "silla.png","sol.png","sombrero.png","taza.png","telefono.png","tomate.png",
-  "tren.png","trompeta.png","uvas.png","vaca.png","zapato.png","camión.png",
+  "pelota.png","pera.png","pez.png","rana.png","raton.png","reloj.png",
+  "silla.png","sol.png","sombrero.png","telefono.png","tomate.png",
+  "tren.png","trompeta.png","uvas.png","vaca.png","zapato.png","camion.png",
   "carro.png","casa.png","cebolla.png","cerdo.png","cielo.png","flor.png",
   "gallo.png","gato.png","jirafa.png","leche.png","leon.png","lapiz.png","niño.png"
 ];
@@ -15,6 +15,17 @@ function speak(text) {
   const msg = new SpeechSynthesisUtterance(text);
   msg.lang = "es-ES";
   speechSynthesis.speak(msg);
+}
+function showSparkles() {
+  const container = document.getElementById("sparkle-container");
+  for (let i = 0; i < 15; i++) {
+    const sparkle = document.createElement("div");
+    sparkle.classList.add("sparkle");
+    sparkle.style.left = Math.random() * 100 + "%";
+    sparkle.style.top = "60%";
+    container.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 1000);
+  }
 }
 
 function shuffle(array) {
@@ -56,6 +67,7 @@ function handleOptionClick(e) {
   if (selected === correctAnswer) {
     effect.textContent = "¡Muy bien!";
     effect.classList.add("correct");
+    showSparkles();
     setTimeout(() => {
       effect.classList.remove("correct");
       effect.textContent = "";
