@@ -64,7 +64,10 @@ function handleOptionClick(e) {
   const selected = e.target.textContent;
   speak(selected);
   const effect = document.getElementById("effect");
+
   if (selected === correctAnswer) {
+    score++;
+    document.getElementById("score").textContent = `Puntos: ${score}`;
     effect.textContent = "¡Muy bien!";
     effect.classList.add("correct");
     showSparkles();
@@ -78,6 +81,20 @@ function handleOptionClick(e) {
     setTimeout(() => {
       effect.textContent = "";
     }, 1000);
+  }
+}
+
+
+let score = 0;
+
+function handleOptionClick(e) {
+  const selected = e.target.textContent;
+  speak(selected);
+  const effect = document.getElementById("effect");
+  if (selected === correctAnswer) {
+    score++;
+    document.getElementById("score").textContent = `Puntos: ${score}`;
+    ...
   }
 }
 
