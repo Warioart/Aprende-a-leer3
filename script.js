@@ -81,6 +81,19 @@ function handleOptionClick(e) {
   }
 }
 
+let score = 0;
+
+function handleOptionClick(e) {
+  const selected = e.target.textContent;
+  speak(selected);
+  const effect = document.getElementById("effect");
+  if (selected === correctAnswer) {
+    score++;
+    document.getElementById("score").textContent = `Puntos: ${score}`;
+    ...
+  }
+}
+
 document.getElementById("option1").addEventListener("click", handleOptionClick);
 document.getElementById("option2").addEventListener("click", handleOptionClick);
 
