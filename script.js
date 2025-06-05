@@ -1,11 +1,11 @@
 ﻿const images = [
   "lapiz.png","libro.png","limon.png","luna.png","manzana.png","media.png",
   "mesa.png","mono.png","niña.png","niño.png","oveja.png","pan.png","papá.png",
-  "pelota.png","pera.png","pez.png","puerco.png","rana.png","ratón.png","reloj.png",
-  "silla.png","sol.png","sombrero.png","taza.png","teléfono.png","tomate.png",
+  "pelota.png","pera.png","pez.png","puerco.png","rana.png","raton.png","reloj.png",
+  "silla.png","sol.png","sombrero.png","taza.png","telefono.png","tomate.png",
   "tren.png","trompeta.png","uvas.png","vaca.png","zapato.png","camión.png",
   "carro.png","casa.png","cebolla.png","cerdo.png","cielo.png","flor.png",
-  "gallo.png","gato.png","jirafa.png","leche.png","león.png","lápiz.png","niño.png"
+  "gallo.png","gato.png","jirafa.png","leche.png","leon.png","lapiz.png","niño.png"
 ];
 
 let currentImage = "";
