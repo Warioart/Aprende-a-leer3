@@ -1,5 +1,5 @@
 ﻿const images = [
-  "lapiz.png","libro-25.png","limon.png","luna-25.png","manzana.png","media.png",
+  "lapiz.png","libro.png","limon.png","luna.png","manzana.png","media.png",
   "mesa.png","mono.png","niña.png","niño.png","oveja.png","pan.png","papá.png",
   "pelota.png","pera.png","pez.png","puerco.png","rana.png","ratón.png","reloj.png",
   "silla.png","sol.png","sombrero.png","taza.png","teléfono.png","tomate.png",
